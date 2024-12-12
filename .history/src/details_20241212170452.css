@@ -1,0 +1,49 @@
+.details-page {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(135deg, #87CEEB, #FFB6C1); /* สีฟ้าชมพู */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.header-text {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.card-stack {
+  position: relative;
+  width: 300px;
+  height: 200px;
+}
+
+.controls {
+  position: absolute;
+  bottom: 10%;
+  display: flex;
+  gap: 10px;
+}
+
+.controls button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
+}
+
+.controls button:hover {
+  background-color: lightgray;
+}

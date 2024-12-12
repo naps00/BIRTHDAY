@@ -1,0 +1,55 @@
+.details-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 300vh; /* กำหนดความสูงขั้นต่ำ */
+  background: linear-gradient(to bottom, #87CEFA, #FFB6C1);
+  padding: 40px; /* เพิ่มระยะห่างจากขอบ */
+  overflow-y: auto; /* ให้เลื่อนแนวตั้งได้ */
+  box-sizing: border-box;
+}
+
+.card-stack {
+  position: relative;
+  width: 100%; /* ใช้พื้นที่เต็มความกว้าง */
+  max-width: 400px; /* จำกัดขนาดความกว้าง */
+  display: flex;
+  flex-direction: column; /* จัดเรียงแนวตั้ง */
+  align-items: center;
+  gap: 20px; /* ระยะห่างระหว่างแต่ละรูป */
+}
+.header-text {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 2.5rem;
+}
+.card {
+  width: 200px; /* เพิ่มขนาดความกว้าง */
+  height: 300px; /* เพิ่มขนาดความสูง */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.text-box {
+  margin-top: 30px; /* เพิ่มระยะห่างระหว่างภาพและข้อความ */
+  padding: 20px; /* ขยายพื้นที่ข้อความ */
+  width: 100%;
+  margin-top: 80px; /* ระยะห่างระหว่างปุ่มกับข้อความ */
+  max-width: 500px; /* ขยายขนาดกล่องข้อความ */
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; /* จัดข้อความให้อยู่กึ่งกลาง */
+  font-size: 18px; /* เพิ่มขนาดตัวอักษร */
+  line-height: 1.6; /* เพิ่มความสูงระหว่างบรรทัด */
+}
+
+.controls {
+  margin-top: 10px; /* ระยะห่างระหว่างปุ่มกับข้อความ */
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* เพิ่มระยะห่างระหว่างปุ่ม */
+}

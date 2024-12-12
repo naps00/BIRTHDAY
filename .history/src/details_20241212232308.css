@@ -1,0 +1,124 @@
+.details-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 350vh; /* ความสูงที่ยาวพอให้เลื่อน */
+  background: linear-gradient(270deg, #87CEFA, #FFB6C1);
+  background-size: 400% 400%;
+  animation: gradientShift 10s ease infinite;
+  padding: 40px;
+  overflow-y: auto;
+  box-sizing: border-box;
+  position: relative;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.emoji {
+  position: absolute; /* ใช้ absolute แทน fixed */
+  top: 3%; /* ตำแหน่งเริ่มต้น */
+  left: 35%;
+  transform: translate(-50%, 0);
+  font-size: 30px;
+  animation: smoothBounce 1.4s infinite;
+  z-index: 50;
+}
+.emoji2 {
+  position: absolute; /* ใช้ absolute แทน fixed */
+  top: 12%; /* ตำแหน่งเริ่มต้น */
+  left: 80%;
+  transform: translate(-50%, 0);
+  font-size: 50px;
+  animation: smoothBounce 1.4s infinite;
+  z-index: 50;
+}
+.emoji3 {
+  position: absolute; /* ใช้ absolute แทน fixed */
+  top: 34%; /* ตำแหน่งเริ่มต้น */
+  left: 25%;
+  transform: translate(-50%, 0);
+  font-size: 60px;
+  animation: smoothBounce 1.4s infinite;
+  z-index: 50;
+}
+.emoji4 {
+  position: absolute; /* ใช้ absolute แทน fixed */
+  top: 70%; /* ตำแหน่งเริ่มต้น */
+  left: 72%;
+  transform: translate(-50%, 0);
+  font-size: 60px;
+  animation: smoothBounce 1.4s infinite;
+  z-index: 50;
+}
+@keyframes smoothBounce {
+  0%, 100% { transform: translate(-50%, 0); }
+  50% { transform: translate(-50%, -20px); }
+}
+
+
+@keyframes moveWithBackground {
+  0% { transform: translate(0%, 0%); }
+  50% { transform: translate(100px, 0%); }
+  100% { transform: translate(0%, 0%); }
+}
+
+
+
+.card-stack {
+  position: relative;
+  width: 100%; /* ใช้พื้นที่เต็มความกว้าง */
+  max-width: 400px; /* จำกัดขนาดความกว้าง */
+  display: flex;
+  flex-direction: column; /* จัดเรียงแนวตั้ง */
+  align-items: center;
+  gap: 20px; /* ระยะห่างระหว่างแต่ละรูป */
+}
+.header-text {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 2.5rem;
+}
+.card {
+  width: 200px; /* เพิ่มขนาดความกว้าง */
+  height: 300px; /* เพิ่มขนาดความสูง */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.text-box {
+  margin-top: 30px;
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left; /* จัดข้อความให้อยู่ทางซ้าย */
+  font-size: 16px; /* ขนาดข้อความ */
+  line-height: 1.8; /* ระยะระหว่างบรรทัด */
+  color: #333; /* สีตัวอักษร */
+  white-space: pre-line; /* รองรับข้อความหลายบรรทัด */
+}
+
+.controls {
+  margin-top: 10px; /* ระยะห่างระหว่างปุ่มกับข้อความ */
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* เพิ่มระยะห่างระหว่างปุ่ม */
+}
+.card-message p {
+  margin-bottom: 1em; /* เพิ่มระยะห่างระหว่างย่อหน้า */
+}
+
+.itim-regular {
+  font-family: "Itim", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+

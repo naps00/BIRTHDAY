@@ -1,0 +1,53 @@
+.details-page {
+  display: flex;
+  justify-content: center; /* จัดให้ข้อความอยู่กลางแนวนอน */
+  align-items: flex-start; /* จัดให้ข้อความอยู่ที่ด้านบนสุด */
+  height: 100vh;
+  transition: background-color 2s ease-in-out;
+}
+
+.details-page.blue {
+  background-color: #00bfff; /* ฟ้าสด */
+}
+
+.details-page.pink {
+  background-color: #ff69b4; /* ชมพูสด */
+}
+
+.content h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding-top: 20px; /* ระยะห่างจากขอบบน */
+}
+
+
+.card-stack {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.card {
+  position: absolute;
+  animation: shuffle 2s infinite alternate; /* ใช้ animation สำหรับการเคลื่อนไหว */
+  width: 150px;
+  height: 150px;
+  z-index: 1;
+}
+
+/* สร้างการเคลื่อนไหวที่ดูเหมือนสับไพ่ */
+@keyframes shuffle {
+  0% {
+    transform: translateX(-50px); /* เคลื่อนที่ไปทางซ้าย */
+    z-index: 2;
+  }
+  100% {
+    transform: translateX(50px); /* เคลื่อนที่ไปทางขวา */
+    z-index: 1;
+  }
+}

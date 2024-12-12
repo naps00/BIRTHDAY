@@ -1,0 +1,20 @@
+.audio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 400px; /* กำหนดความกว้าง */
+    padding: 10px;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-audio {
+    width: 100%; /* ทำให้ audio เต็มความกว้างของ container */
+    outline: none; /* เอาเส้นขอบออกเมื่อ focus */
+    border-radius: 8px; /* มุมโค้ง */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  

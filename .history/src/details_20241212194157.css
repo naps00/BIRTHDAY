@@ -1,0 +1,41 @@
+.details-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: auto; /* เปลี่ยนจาก 100vh เพื่อให้ครอบคลุมเนื้อหาทั้งหมด */
+  background: linear-gradient(to bottom, #87CEFA, #FFB6C1);
+  padding: 20px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.card-stack {
+  position: relative;
+  width: 300px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column; /* จัดเรียงแนวตั้ง */
+  align-items: center;
+  gap: 200px; /* เพิ่มระยะห่างระหว่างรูป */
+}
+
+.card {
+  position: relative;
+  width: 170px;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.text-box {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
